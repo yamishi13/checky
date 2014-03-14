@@ -3,6 +3,7 @@ branches:
     only:
         - master
 
-language: node_js
+before_script:
+  - sudo npm install -g grunt
 
-script: phantomjs /test/asd.js
+script: grunt test --verbose --force
