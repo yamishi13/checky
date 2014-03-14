@@ -3,9 +3,9 @@ branches:
     only:
         - master
 
-language: javascript
+language: node_js
 
 before_script:
-    - npm install -g grunt
+    - npm install -g grunt-cli
 
 script: grunt test --verbose --force
