@@ -1,9 +1,0 @@
-# .travis.yml
-branches:
-    only:
-        - master
-
-before_script:
-  - npm install -g grunt
-
-script: grunt test --verbose --force
