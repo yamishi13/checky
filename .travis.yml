@@ -10,3 +10,7 @@ before_install:
 
 before_script:
     - npm install grunt-contrib-jasmine
+
+"scripts": {
+    "test": "grunt travis --verbose"
+}
