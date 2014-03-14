@@ -5,7 +5,12 @@ branches:
 
 language: node_js
 
-before_script:
+before_install:
     - npm install -g grunt-cli
 
-script: grunt test --verbose --force
+before_script:
+    - npm install grunt-contrib-jasmine
+
+"scripts": {
+    "test": "grunt travis --verbose"
+  }

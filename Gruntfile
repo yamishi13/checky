@@ -1,8 +1,13 @@
-//grunt.js
-grunt.initConfig({
-    qunit: {
-        files: ['test/index.html']
+jasmine: {
+    components: {
+        src: [
+        'components/*js'
+        ],
+        options: {
+            specs: 'test/spec/*Spec.js',
+            KeepRunner: true
+        }
     }
-});
+}
 
-grunt.registerTask('test', 'qunit');
+grunt.registerTask('travis', ['jshint','jasmine']);
