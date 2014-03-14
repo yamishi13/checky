@@ -5,12 +5,4 @@ branches:
 
 language: node_js
 
-before_install:
-    - npm install -g grunt-cli
-
-before_script:
-    - npm install grunt-contrib-jasmine
-
-"scripts": {
-    "test": "grunt travis --verbose"
-}
+script: phantomjs /test/asd.js
