@@ -12,7 +12,12 @@ function checky() {
 
     this.checkyfy = function(id) {
         document.getElementById(id).onclick = function(e) {
-            alert(id);
+            for (var i = 0; i < this.checks.ch.length; i++) {
+                if(this.checks.ch[i].id === id) {
+                    this.checks.ch[i].status = document.getElementById(id).checked;
+                    localStorage.checks = JSON.stringify(this.checks);
+                }
+            }
         };
     }
 }
