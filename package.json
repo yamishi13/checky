@@ -4,9 +4,10 @@
   "author": "Roberto Carlos Martinez Arriaga",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt-cli": "~0.1.13"
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jshint": "0.6.0"
   },
   "scripts": {
-    "test": "grunt travis --verbose"
+    "test": "grunt --verbose"
   }
 }
