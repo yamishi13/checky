@@ -10,7 +10,9 @@ function checky() {
         //var curr = document.getElementById(c.nombre);
     });
 
-    function onUpdate (id) {
-        document.getElementById(id);
+    function checkyfy (id) {
+        document.getElementById(id).onclick = function(e) {
+            alert(id);
+        }
     }
 }
