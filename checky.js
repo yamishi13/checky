@@ -1,7 +1,7 @@
 //checky.js
 function checky() {
     this.checks = {"ch": []};
-    if(localStorage.checks === null) {
+    if(!localStorage.checks) {
         localStorage.checks = JSON.stringify(this.checks);
     }
 
