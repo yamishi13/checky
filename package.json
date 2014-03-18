@@ -7,6 +7,6 @@
     "grunt-cli": "~0.1.13"
   },
   "scripts": {
-    "test": "grunt-cli travis --verbose"
+    "test": "grunt travis --verbose"
   }
 }
