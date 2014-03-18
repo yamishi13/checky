@@ -13,6 +13,6 @@ function checky() {
     function checkyfy (id) {
         document.getElementById(id).onclick = function(e) {
             alert(id);
-        }
+        };
     }
 }

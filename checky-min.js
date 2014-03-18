@@ -1,1 +1,1 @@
-function checky(){this.checks={ch:[]};if(!localStorage.checks){localStorage.checks=JSON.stringify(this.checks);}this.checks=JSON.parse(localStorage.checks);this.checks.ch.forEach(function(b){});function a(b){document.getElementById(b);}}
+function checky(){this.checks={ch:[]};if(!localStorage.checks){localStorage.checks=JSON.stringify(this.checks);}this.checks=JSON.parse(localStorage.checks);this.checks.ch.forEach(function(b){});function a(b){document.getElementById(b).onclick=function(c){alert(b);};}}
