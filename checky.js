@@ -1,1 +1,4 @@
 //checky.js
+function checky() {
+
+}
