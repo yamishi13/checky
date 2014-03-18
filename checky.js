@@ -10,7 +10,7 @@ function checky() {
         //var curr = document.getElementById(c.nombre);
     });
 
-    function checkyfy (id) {
+    this.checkyfy = function(id) {
         document.getElementById(id).onclick = function(e) {
             alert(id);
         };
