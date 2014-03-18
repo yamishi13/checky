@@ -8,5 +8,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('travis', 'lint min';
+    grunt.registerTask('travis', 'lint min');
 };
