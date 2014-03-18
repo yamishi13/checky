@@ -1,0 +1,12 @@
+{
+  "name": "checky",
+  "description": "Simple way to save state on checkboxes",
+  "author": "Roberto Carlos Martinez Arriaga",
+  "version": "0.1",
+  "devDependencies": {
+    "grunt-cli": "~0.1.13"
+  },
+  "scripts": {
+    "test": "grunt-cli travis --verbose"
+  }
+}
