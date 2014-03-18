@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt-cli": "~0.1.13",
-    "grunt-contrib-jshint": "0.6.0"
+    "grunt-contrib-jshint": "0.6.4"
   },
   "scripts": {
     "test": "grunt --verbose"
