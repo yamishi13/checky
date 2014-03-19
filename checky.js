@@ -16,6 +16,7 @@ function checky() {
                 if(this.checks.ch[i].id === id) {
                     this.checks.ch[i].status = document.getElementById(id).checked;
                     localStorage.checks = JSON.stringify(this.checks);
+                    //chesar
                 }
             }
         };
