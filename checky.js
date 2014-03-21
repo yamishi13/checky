@@ -7,7 +7,7 @@ function Checky() {
 
     checks = JSON.parse(localStorage.checks);
     checks.ch.forEach(function(c) {
-        //var curr = document.getElementById(c.nombre);
+        document.getElementById(c.id).checked = c.status;
     });
 
     this.checkyfy = function(id) {
