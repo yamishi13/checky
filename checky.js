@@ -1,23 +1,30 @@
 //checky.js
-function checky() {
-    this.checks = {"ch": []};
+function Checky() {
+    var checks = {"ch": []};
     if(!localStorage.checks) {
-        localStorage.checks = JSON.stringify(this.checks);
+        localStorage.checks = JSON.stringify(checks);
     }
 
-    this.checks = JSON.parse(localStorage.checks);
-    this.checks.ch.forEach(function(c) {
+    checks = JSON.parse(localStorage.checks);
+    checks.ch.forEach(function(c) {
         //var curr = document.getElementById(c.nombre);
     });
 
     this.checkyfy = function(id) {
         document.getElementById(id).onclick = function(e) {
-            for (var i = 0; i < this.checks.ch.length; i++) {
-                if(this.checks.ch[i].id === id) {
-                    this.checks.ch[i].status = document.getElementById(id).checked;
-                    localStorage.checks = JSON.stringify(this.checks);
-                    //chesar
+            var done = false;
+            for (var i = 0; i < checks.ch.length; i++) {
+                if(checks.ch[i].id === id) {
+                    checks.ch[i].status = document.getElementById(id).checked;
+                    localStorage.checks = JSON.stringify(checks);
+                    done = true;
+                    break;
                 }
+            }
+            if(!done) {
+                obj = {"id": id, "status": document.getElementById(id).checked};
+                checks.ch.push(obj);
+                localStorage.checks = JSON.stringify(checks);
             }
         };
     };
