@@ -28,4 +28,21 @@ function Checky() {
             }
         };
     };
+
+    this.checkyfy = function(id, anchor) {
+        document.getElementById(anchor).onclick = function(e) {
+            var done = false;
+            for (var i = 0; i < checks.ch.length; i++) {
+                if(checks.ch[i].id === id) {
+                    done = true;
+                    break;
+                }
+            }
+            if(!done) {
+                obj = {"id": id, "status": false};
+                checks.ch.push(obj);
+                localStorage.checks = JSON.stringify(checks);
+            }
+        }
+    };
 }
