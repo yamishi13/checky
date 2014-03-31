@@ -11,7 +11,7 @@ function Checky() {
     });
 
     this.checkyfy = function(id) {
-        document.getElementById(id).onclick = function(e) {
+        document.getElementById(id).onclick = function() {
             var done = false;
             for (var i = 0; i < checks.ch.length; i++) {
                 if(checks.ch[i].id === id) {
