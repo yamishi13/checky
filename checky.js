@@ -10,15 +10,11 @@ function Checky() {
         document.getElementById(c.id).checked = c.status;
     });
 
-    this.checkyfy = function(id, type, extras) {
-        type = typeof type !== 'undefined' ? type : "checkbox";
-        extras = typeof extras !== 'undefined' ? extras : {"anchor":""};
-        switch(type) {
-            case "checkbox":
-                this.checkybox(id); break;
-            case "anchor":
-                this.checkyanchor(id, extras.anchor); break;
-        }
+    this.checkyfy = function(id, anchor) {
+        if(typeof anchor === 'undefined')
+            this.checkbox(id);
+        else
+            this.checkyanchor(id, anchor);
     };
 
     this.checkybox = function(id) {
