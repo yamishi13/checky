@@ -13,7 +13,6 @@ Released under MIT License. Refer to LICENSE file for details.
 git clone https://github.com/yamishi13/checky.git
 ```
 or download a release for full tested code
-
 2. Add checky to your html
 Development
 ``` html
@@ -23,7 +22,6 @@ Production
 ``` html
 <script type="text/javascript" src="checky/checky-min.js"></script>
 ```
-
 3. Instantiate and checkyfy checkboxes 
 ``` javascript
 ck = new Checky();
