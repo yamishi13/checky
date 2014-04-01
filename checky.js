@@ -12,7 +12,7 @@ function Checky() {
 
     this.checkyfy = function(id, anchor) {
         if(typeof anchor === 'undefined')
-            this.checkbox(id);
+            this.checkybox(id);
         else
             this.checkyanchor(id, anchor);
     };
